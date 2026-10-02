@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C画面 - データテーブル</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+	  <a href="A.html" class="home-link" aria-label="トップ画面へ戻る">
+	    <span class="home-icon">〇</span>
+	    <span>課題1</span>
+	  </a>
+	</header>
+
+  <main class="main">
+      <h1>データテーブル</h1>
+
+    <section class="panel table-panel">
+      <div class="table-toolbar">
+        <button type="button" class="primary-button" id="addRowButton">＋ 行を追加</button>
+        <button type="button" class="delete-button" id="deleteRowButton">− 選択行を削除</button>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="dataTable">
+          <thead>
+            <tr>
+              <th class="number-column">No.</th>
+              <th class="check-column">選択</th>
+              <th>入力内容</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 My Application</p>
+  </footer>
+
+  <script src="js/C.js"></script>
+</body>
+</html>
