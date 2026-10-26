@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B画面 - 入力フォーム</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<a href="A.html" class="home-link" aria-label="トップ画面へ戻る">
+			<span class="home-icon">〇</span>
+		</a>
+		<span>課題1</span>
+	</header>
+
+  <main class="main">
+      <h1>入力フォーム</h1>
+
+    <div class="form-layout">
+      <section class="panel">
+        <h2>入力項目</h2>
+
+        <form id="inputForm">
+          <div class="form-group">
+            <label for="name">テキストボックス</label>
+            <input type="text" id="name" placeholder="名前を入力してください">
+          </div>
+
+          <div class="form-group">
+            <label for="description">テキストエリア</label>
+            <textarea id="description" rows="4" placeholder="内容を入力してください"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>ラジオボタン</label>
+            <div class="choice-group">
+              <label class="choice"><input type="radio" name="gender" value="男性"> 男性</label>
+              <label class="choice"><input type="radio" name="gender" value="女性"> 女性</label>
+              <label class="choice"><input type="radio" name="gender" value="その他"> その他</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>チェックボックス</label>
+            <div class="choice-group">
+              <label class="choice"><input type="checkbox" name="hobby" value="映画"> 映画</label>
+              <label class="choice"><input type="checkbox" name="hobby" value="ゲーム"> ゲーム</label>
+              <label class="choice"><input type="checkbox" name="hobby" value="音楽"> 音楽</label>
+              <label class="choice"><input type="checkbox" name="hobby" value="スポーツ"> スポーツ</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="job">セレクトボックス</label>
+            <select id="job">
+              <option value="">選択してください</option>
+              <option value="会社員">会社員</option>
+              <option value="学生">学生</option>
+              <option value="自営業">自営業</option>
+              <option value="公務員">公務員</option>
+              <option value="その他">その他</option>
+            </select>
+            <button type="button" class="small-button" id="resultButton">登録</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel result-panel">
+        <h2>登録内容</h2>
+
+        <div class="result-item">
+          <span class="result-label">名前</span>
+          <p id="nameResult">未登録</p>
+        </div>
+
+        <div class="result-item">
+          <span class="result-label">詳細</span>
+          <p id="descriptionResult">未登録</p>
+        </div>
+
+        <div class="result-item">
+          <span class="result-label">性別</span>
+          <p id="genderResult">未登録</p>
+        </div>
+
+        <div class="result-item">
+          <span class="result-label">趣味</span>
+          <p id="hobbyResult">未登録</p>
+        </div>
+
+        <div class="result-item">
+          <span class="result-label">職業</span>
+          <p id="jobResult">未登録</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 My Application</p>
+  <a href="A.html" class="home-link" aria-label="トップ画面へ戻る">
+  	<span class="home-icon">〇</span>
+  	<span>トップ</span>
+  </a>
+  </footer>
+
+  <script src="js/B.js"></script>
+</body>
+</html>
