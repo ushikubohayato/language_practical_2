@@ -225,19 +225,6 @@ textarea {
   color: white;
 }
 
-.small-button:hover,
-.primary-button:hover {
-  background: #1b4263;
-}
-
-.delete-button {
-  background: #b84a4a;
-  color: white;
-}
-
-.delete-button:hover {
-  background: #983a3a;
-}
 
 /* ===== B画面 出力 ===== */
 
@@ -306,13 +293,6 @@ tbody td {
   border-right: 1px solid #dfe4e8;
 }
 
-tbody tr:nth-child(even) {
-  background: #f8fafb;
-}
-
-tbody tr:hover {
-  background: #eef5fa;
-}
 
 .number-column,
 .number-cell {
